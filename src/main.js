@@ -1,5 +1,4 @@
 // Modern Premium Portfolio JS
-import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   // --- Sticky Navigation & Scroll Spy ---
