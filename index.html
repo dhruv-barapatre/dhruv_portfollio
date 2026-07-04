@@ -1,413 +1,623 @@
 <!DOCTYPE html>
-<html class="no-js ss-preload" lang="en">
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhruv Barapatre | Full Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Dhruv Barapatre, a Full Stack Developer specializing in Next.js, React, Node.js, and modern lightweight web applications.">
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Dhruv Barapatre</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body id="top">
 
+  <!-- Background Cyber Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
 
-    <!-- # preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-        </div>
+  <!-- Header & Floating Navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="#top" class="nav-logo">Dhruv.</a>
+
+      <ul class="nav-links">
+        <li><a href="#top" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#works" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </header>
 
+  <!-- Mobile Sidebar Menu -->
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-menu">
+    <ul class="mobile-nav-links">
+      <li><a href="#top" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#works" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </aside>
 
-    <!-- # page wrap
-    ================================================== -->
-    <div class="s-pagewrap">
+  <!-- Main Content Wrapper -->
+  <main>
 
-        <div class="circles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+    <!-- Hero / Intro Section -->
+    <section id="hero" class="hero container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in-section is-visible">
+          <span class="text-pretitle">Welcome to my space</span>
+          <h1 class="hero-title">Dhruv <span class="gradient-text">Barapatre</span></h1>
+          <p class="hero-subtitle">Full Stack Developer • 20 Year Old Creator</p>
+          <p class="hero-description">
+            I turn complex ideas into elegant, high-performance, and fully responsive web applications. Specializing in
+            Next.js, React, Node.js, and API engineering.
+          </p>
+          <div class="hero-actions">
+            <a href="#works" class="btn btn--primary">
+              View Work
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/dhruv-barapatre" target="_blank" rel="noopener noreferrer"
+              class="hero-social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/dhruv-barapatre-18727028b/" target="_blank" rel="noopener noreferrer"
+              class="hero-social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/dhruv.b.2801/" target="_blank" rel="noopener noreferrer"
+              class="hero-social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
         </div>
 
+        <div class="hero-visual fade-in-section is-visible">
+          <div class="hero-avatar-wrapper">
+            <img src="/images/about-photo.png" alt="Dhruv Barapatre Profile" class="hero-avatar"
+              onerror="this.src='/images/about-photo.jpg'">
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- ## site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Dhruv.</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+    <!-- About & Skills Section -->
+    <section id="about" class="container fade-in-section">
+      <div class="about-grid">
+        <div class="about-summary">
+          <span class="text-pretitle">About Me</span>
+          <h2 class="hero-title" style="font-size: 2.2rem; margin-bottom: 1.5rem;">Who I Am</h2>
+          <p>
+            I am a highly motivated 20-year-old Full Stack Developer with a passion for structuring, coding, and
+            deploying scalable web services. I specialize in Next.js environments and Node.js backend systems,
+            translating ideas into pixel-perfect responsive user interfaces.
+          </p>
+          <p>
+            My experience spans enterprise resource planning (ERP) portals, Scada dashboards, and WebSockets-driven
+            real-time applications. I love building lightweight solutions that load instantly and offer interactive
+            interfaces.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="/resume/Dhruv_resume.pdf" download="Dhruv_resume.pdf" class="btn btn--secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">11M+</div>
+              <div class="stat-label">Total Experience</div>
             </div>
-
-            <div class="row wide main-nav-wrap">
-                <nav class="column lg-12 main-nav">
-                    <ul>
-                        <li><a href="index.html" class="home-link">Dhruv.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Works</a></li>
-                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
-                    </ul>
-                </nav>
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Key Projects</div>
             </div>
+          </div>
+        </div>
 
-        </header> <!-- end s-header -->
+        <div class="skills-wrapper">
+          <h3 class="skills-category-title" style="margin-top: 1rem;">My Toolkit</h3>
 
+          <div class="skills-category">
+            <h4 class="skills-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Frontend
+            </h4>
+            <div class="skills-grid">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Angular.js</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
 
-        <!-- ## main content
-        ==================================================- -->
-        <main class="s-content">
+          <div class="skills-category">
+            <h4 class="skills-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              Backend
+            </h4>
+            <div class="skills-grid">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">JSON Server</span>
+            </div>
+          </div>
 
+          <div class="skills-category">
+            <h4 class="skills-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+              </svg>
+              Database
+            </h4>
+            <div class="skills-grid">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Mongoose</span>
+            </div>
+          </div>
 
-            <!-- ### intro
-            ================================================== -->
-            <section id="intro" class="s-intro target-section">
+          <div class="skills-category">
+            <h4 class="skills-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="18" rx="2" ry="2"></rect>
+                <path d="M6 8l4 4-4 4M12 16h6"></path>
+              </svg>
+              Tools
+            </h4>
+            <div class="skills-grid">
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="row intro-content wide">
-                    <div class="column">
-                        <h1 class="text-huge-title">
-                            Dhruv here, <br>
-                            full stack developer <br>
-                            turning ideas into <br>
-                            real-world web apps.
-                        </h1>
-                    </div>
-                    <ul class="intro-social">
-                        <li><a href="https://www.instagram.com/dhruv.b.2801/">Instagram</a></li>
-                        <li><a href="https://github.com/dhruv-barapatre">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/dhruv-barapatre-18727028b/">Linkedin</a></li>
-                    </ul>
-                </div>
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="container fade-in-section">
+      <div class="section-title-wrapper">
+        <span class="text-pretitle">Career Timeline</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">A brief overview of my web engineering history.</p>
+      </div>
 
-                <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                        fill-rule="evenodd" clip-rule="evenodd">
-                        <path
-                            d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-                    </svg>
+      <div class="experience-timeline">
+        <!-- Item 1: Krishnai Solution -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h4 class="experience-company">Krishnai Solution</h4>
+            <h5 class="experience-role">Next.js Developer</h5>
+            <span class="experience-date">Feb 2025 - May 2026 (4 Months)</span>
+            <p class="exp-project-desc" style="margin-bottom: 1rem;">
+              Built high-end Next.js frontends and integrated them with scalable Node.js servers, optimizing load
+              performance and real-time operations.
+            </p>
+            <div class="experience-projects">
+              <div class="experience-project-item">
+                <span class="exp-project-name">Follow Up Portal</span>
+                <span class="exp-project-desc">A full stack dashboard (Next.js & Node.js) with real-time status updates
+                  powered by WebSockets.</span>
+              </div>
+              <div class="experience-project-item">
+                <span class="exp-project-name">Solar ERP</span>
+                <span class="exp-project-desc">Corporate enterprise app (React & Node.js) managing supply chain metrics,
+                  customer installation statuses, and reports.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Zechrome Technologies -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h4 class="experience-company">Zechrome Technologies</h4>
+            <h5 class="experience-role">Full Stack Developer</h5>
+            <span class="experience-date">Aug 2024 - Jan 2025 (7 Months)</span>
+            <p class="exp-project-desc" style="margin-bottom: 1rem;">
+              Developed frontends in Next.js, Angular, and React, backed by .NET microservices. Collaborated closely on
+              product releases.
+            </p>
+            <div class="experience-projects">
+              <div class="experience-project-item">
+                <span class="exp-project-name">Bit Eu</span>
+                <span class="exp-project-desc">Interactive Next.js platform crafted for seamless client onboarding and
+                  profile management.</span>
+              </div>
+              <div class="experience-project-item">
+                <span class="exp-project-name">Morasala Tec</span>
+                <span class="exp-project-desc">Enterprise system built using Angular for the frontend and .NET Core REST
+                  APIs.</span>
+              </div>
+              <div class="experience-project-item">
+                <span class="exp-project-name">Scada UI</span>
+                <span class="exp-project-desc">React dashboard dashboard displaying live industrial IoT telemetry and
+                  chart data.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section id="works" class="container fade-in-section">
+      <div class="section-title-wrapper">
+        <span class="text-pretitle">Selected Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world applications and commercial products I have developed.</p>
+      </div>
+
+      <div class="works-grid">
+        <!-- Project 1: Follow Up Portal -->
+        <article class="work-card">
+          <div class="work-image-container">
+            <img src="/images/screenshot/image.png" alt="Follow Up Portal Mockup" class="work-image"
+              onerror="this.src='/images/sample-image.jpg'">
+          </div>
+          <div class="work-content">
+            <div class="work-meta">
+              <span class="work-category">Real-time Portal</span>
+              <div class="work-links">
+                <a href="https://github.com/dhruv-barapatre" target="_blank" rel="noopener noreferrer" class="work-link"
+                  aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
                 </a>
-
-            </section>
-
-
-            <!-- ### about
-            ================================================== -->
-            <section id="about" class="s-about target-section">
-
-
-                <div class="row about-info wide" data-animate-block>
-
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/about-photo.png"
-                            srcset="images/about-photo.png 1x, images/about-photo@2x.png 2x" alt=""
-                            class="about-info__pic" data-animate-el>
-                    </div>
-
-                    <div class="column lg-6 md-12">
-                        <div class="about-info__text">
-
-                            <h2 class="text-pretitle with-line" data-animate-el>
-                                About
-                            </h2>
-                            <p class="attention-getter" data-animate-el>
-                                Full Stack Developer focused on building modern, scalable, and user-friendly web
-                                applications. Passionate about clean code, performance, and continuous learning.
-                            </p>
-                            <a href="./resume/Dhruv_resume.pdf" download="Dhruv_resume.pdf"
-                                class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
-
-                        </div>
-                    </div>
-                </div> <!-- about-info -->
-
-
-                <div class="row about-expertise" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
-
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Frontend Development</li>
-                            <li>Backend Development</li>
-                            <li>Full Stack Web Development</li>
-                            <li>API Development</li>
-                            <li>Database Management</li>
-                            <li>Responsive UI Design</li>
-                        </ul>
-
-                    </div>
-                </div> <!-- end about-expertise -->
-
-
-                <div class="row about-timelines" data-animate-block>
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Experience
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Krishnai Solutions</h4>
-                                    <h5 class="timeline__meta">Next.js Full Stack Developer</h5>
-                                    <p class="timeline__timeframe">December 2025 - Present</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>
-                                        Working on full stack web applications using modern technologies.
-                                        Developing scalable frontend and backend systems, improving performance,
-                                        and building responsive user interfaces with clean architecture.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Zechrome Technologies</h4>
-                                    <h5 class="timeline__meta">Full Stack Developer</h5>
-                                    <p class="timeline__timeframe">May 2025 - November 2025</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>
-                                        Developed full stack applications with features like authentication,
-                                        CRUD operations, and responsive UI. Worked on real-world projects
-                                        using React, Node.js, and MongoDB.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Education
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Dr. Babasaheb Ambedkar University</h4>
-                                    <h5 class="timeline__meta">BSc IT</h5>
-                                    <p class="timeline__timeframe">2023 - 2026</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>
-                                        Pursuing Bachelor of Science in Information Technology with focus on
-                                        software development, data structures, and web technologies.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Maharishi Aastik High School</h4>
-                                    <h5 class="timeline__meta">HSC & SSC</h5>
-                                    <p class="timeline__timeframe">2020 - 2023</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>
-                                        Completed Higher Secondary and Secondary education with strong academic
-                                        performance (HSC - 78%, SSC - 85%).
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-
-                </div> <!-- end about-timelines -->
-
-            </section> <!-- end s-about -->
-
-
-            <!-- ### works
-            ================================================== -->
-            <section id="works" class="s-works target-section">
-
-
-                <div class="row works-portfolio">
-
-                    <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Recent Works
-                        </h2>
-                        <p class="h1" data-animate-el>
-                            Here are some of my favorite projects I have done lately. Feel free to check them out.
-                        </p>
-
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-01">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/screenshot/image.png"
-                                            srcset="images/screenshot/image.png 1x, images/screenshot/image.png 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Website
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Follow Up Portal
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-                        </ul> <!-- end folio-list -->
-
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- -->
-                    <div id="modal-01" hidden>
-                        <div class="modal-popup">
-                            <img src="images/screenshot/image.png" alt="">
-
-                            <div class="modal-popup__desc">
-                                <h5>Follow Up Portal</h5>
-                                <p>
-                                    A real-time follow-up management system with role-based access,
-                                    task assignment using unique follow-up IDs, and live updates
-                                    powered by WebSockets for seamless team collaboration.
-                                </p>
-                                <ul class="modal-popup__cat">
-                                    <li>Full Stack</li>
-                                    <li>Web Application</li>
-                                </ul>
-                            </div>
-
-                            <a href="https://github.com/dhruvbarapatre/follow-up-portal" target="_blank"
-                                class="modal-popup__details">Github link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                </div> <!-- end works-portfolio -->
-
-            </section> <!-- end s-works -->
-
-
-            <!-- ### contact
-            ================================================== -->
-            <section id="contact" class="s-contact target-section">
-
-                <div class="row contact-top">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle">
-                            Get In Touch
-                        </h2>
-
-                        <p class="h1">
-                            I love to hear from you.
-                            Whether you have a question or just
-                            want to chat about design, tech & art — shoot me a message.
-                        </p>
-                    </div>
-                </div> <!-- end contact-top -->
-
-                <div class="row contact-bottom">
-                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Reach me at</h3>
-                        <p class="contact-links">
-                            <a href="mailto:dhruv.b.2801@gmail.com" class="mailtoui">dhruv.b.2801@gmail.com</a> <br>
-                            <a href="tel:+918780813308">+91 8780813308</a>
-                        </p>
-                    </div>
-                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Social</h3>
-                        <ul class="contact-social">
-                            <li><a href="https://www.instagram.com/dhruv.b.2801/">Instagram</a></li>
-                            <li><a href="https://github.com/dhruv-barapatre">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/dhruv-barapatre-18727028b/">Linkedin</a></li>
-                        </ul>
-                    </div>
-                    <div class="column lg-4 md-12 contact-block">
-                        <a href="mailto:dhruv.b.2801@gmail.com"
-                            class="mailtoui btn btn--medium u-fullwidth contact-btn">Say
-                            Hello.</a>
-                    </div>
-                </div> <!-- end contact-bottom -->
-
-            </section> <!-- end contact -->
-
-        </main> <!-- end s-content -->
-
-
-        <!-- ## footer
-        ================================================== -->
-        <footer class="s-footer">
-
-            <div class="row">
-                <div class="column ss-copyright">
-                    <span>© Copyright Dhruv 2026</span>
-
-                    <div class="ss-go-top">
-                        <a class="smoothscroll" title="Back to Top" href="#top">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
-                                clip-rule="evenodd">
-                                <path
-                                    d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-        </footer> <!-- end s-footer -->
-
-    </div> <!-- end -s-pagewrap -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+              </div>
+            </div>
+            <h3 class="work-title">Follow Up Portal</h3>
+            <p class="work-description">
+              A comprehensive system built for team assignments and real-time alerts. Equipped with dynamic WebSockets
+              updates and database triggers.
+            </p>
+            <div class="work-tags">
+              <span class="work-tag">Next.js</span>
+              <span class="work-tag">Node.js</span>
+              <span class="work-tag">WebSockets</span>
+              <span class="work-tag">MongoDB</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Solar ERP -->
+        <article class="work-card">
+          <div class="work-image-container">
+            <div
+              style="width: 100%; height: 100%; background: var(--gradient-card-glow); display: flex; align-items: center; justify-content: center; position: relative;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#cyanPurp)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path
+                  d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+                </path>
+                <defs>
+                  <linearGradient id="cyanPurp" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00f2fe" />
+                    <stop offset="100%" stop-color="#9b51e0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="work-content">
+            <div class="work-meta">
+              <span class="work-category">Enterprise Product</span>
+              <div class="work-links">
+                <a href="https://github.com/dhruv-barapatre" target="_blank" rel="noopener noreferrer" class="work-link"
+                  aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="work-title">Solar ERP</h3>
+            <p class="work-description">
+              Custom company management tool. Monitors project pipelines, client information, schedules, and generates
+              financial PDF summaries.
+            </p>
+            <div class="work-tags">
+              <span class="work-tag">React</span>
+              <span class="work-tag">Node.js</span>
+              <span class="work-tag">Express</span>
+              <span class="work-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: SCADA UI -->
+        <article class="work-card">
+          <div class="work-image-container">
+            <div
+              style="width: 100%; height: 100%; background: var(--gradient-card-glow); display: flex; align-items: center; justify-content: center;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#cyanPurp)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="work-content">
+            <div class="work-meta">
+              <span class="work-category">IoT / Telemetry</span>
+              <div class="work-links">
+                <a href="https://github.com/dhruv-barapatre" target="_blank" rel="noopener noreferrer" class="work-link"
+                  aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="work-title">SCADA UI</h3>
+            <p class="work-description">
+              A high-precision interface dashboard for telemetry tracking. Displays responsive metrics, telemetry logs,
+              and machine performance charts.
+            </p>
+            <div class="work-tags">
+              <span class="work-tag">React</span>
+              <span class="work-tag">Chart.js</span>
+              <span class="work-tag">Real-time SVG</span>
+              <span class="work-tag">WebSockets</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Bit EU -->
+        <article class="work-card">
+          <div class="work-image-container">
+            <div
+              style="width: 100%; height: 100%; background: var(--gradient-card-glow); display: flex; align-items: center; justify-content: center;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#cyanPurp)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="work-content">
+            <div class="work-meta">
+              <span class="work-category">Web Platform</span>
+              <div class="work-links">
+                <a href="https://github.com/dhruv-barapatre" target="_blank" rel="noopener noreferrer" class="work-link"
+                  aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="work-title">Bit EU</h3>
+            <p class="work-description">
+              Client platform created using Next.js. Highlights server-side rendering, client verification flows, and
+              SEO compliance.
+            </p>
+            <div class="work-tags">
+              <span class="work-tag">Next.js</span>
+              <span class="work-tag">TailwindCSS</span>
+              <span class="work-tag">API Integration</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact & Hello Section -->
+    <section id="contact" class="container fade-in-section">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="text-pretitle">Say Hello</span>
+          <h2 class="contact-info-title">Let's build something <span class="gradient-text">amazing</span> together.</h2>
+          <p class="contact-info-desc">
+            Whether you want to hire me, talk about a project, or just chat about technology and development, feel free
+            to reach out. I will get back to you as soon as possible.
+          </p>
+
+          <div class="contact-methods">
+            <!-- Email -->
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-method-details">
+                <h5>Email</h5>
+                <a href="mailto:dhruv.b.2801@gmail.com">dhruv.b.2801@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-method-details">
+                <h5>Phone</h5>
+                <a href="tel:+918780813308">+91 8780813308</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-method-details">
+                <h5>Location</h5>
+                <p>India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3 class="contact-card-title">Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" required class="form-input" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" required class="form-input" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" required class="form-textarea" placeholder="How can I help you?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width: 100%; border: none;">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">© 2026 Dhruv Barapatre. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/dhruv-barapatre" target="_blank" rel="noopener noreferrer"
+          class="footer-social-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dhruv-barapatre-18727028b/" target="_blank" rel="noopener noreferrer"
+          class="footer-social-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/dhruv.b.2801/" target="_blank" rel="noopener noreferrer"
+          class="footer-social-link" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
